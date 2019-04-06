@@ -24,7 +24,7 @@ page{
  
 /*表单内容*/
 .login-from {
-  margin-top: 20rpx;
+  margin-top: 2rpx;
   flex: auto;
   height:100%;
 }
