@@ -57,7 +57,7 @@ Page({
               }
               if (res.data.objects[0].manage == 5) { //教务员
                 wx.switchTab({
-                  url: '../function/function'
+                  url: '../home/home'
 
                 }),
                   wx.showToast({
@@ -69,7 +69,7 @@ Page({
               }
               if (res.data.objects[0].manage == 3) { //教师
                 wx.switchTab({
-                  url: '../function/function',
+                  url: '../home/home',
                 }),
                   wx.showToast({
                     title: '欢迎使用教材管理系统',
@@ -80,7 +80,7 @@ Page({
               }
               if (res.data.objects[0].manage == 1) { //领导
                 wx.switchTab({
-                  url: '../function/function',
+                  url: '../home/home',
                 }),
                   wx.showToast({
                     title: '欢迎使用教材管理系统',
