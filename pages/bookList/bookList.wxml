@@ -1,38 +1,4 @@
-<!--教材清单-->
-<!--<view class="book-content">-->
-  <!--<view wx:for-items="{{book}}" wx:key="{{item.id}}" id="{{item._id}}">-->
-    <!--<view class="book-list">-->
-      <!--<view class="book-image">-->
-        <!--<image src="{{item.src.path}}" mode="aspectFit"></image>-->
-      <!--</view>-->
-      <!--<view class="book-info" id="{{item.id}}" bindtap='moredetails'>-->
-        <!--<view class="book-info-style">-->
-          <!--<view>书名:{{item.book_name}}</view>-->
-          <!--<view>作者:{{item.author}}</view>-->
-          <!--<view>价格:{{item.price}}元</view>-->
-          <!--<view>折后价:{{item.pd_price}}元</view>-->
-          <!--<view>选购专业:{{item.class}}</view>-->
-        <!--</view>-->
-      <!--</view>-->
-    <!--</view>-->
-    <!--<view class="line"></view>-->
-  <!--</view>-->
-<!--</view>-->
-
-<!--<view class="cu-card">-->
-  <!--<view class="cu-item bg-img shadow-blur" bindtap="toChild" wx:for-items="{{book}}" wx:key="{{item.id}}" id="{{item._id}}" wx:key>-->
-    <!--<view class="book-image">-->
-      <!--<image src="{{item.src.path}}" mode="aspectFit"></image>-->
-    <!--</view>-->
-    <!--<view class="cardTitle" >-->
-      <!--<view>书名:{{item.book_name}}</view>-->
-      <!--<view>作者:{{item.author}}</view>-->
-      <!--<view>价格:{{item.price}}元</view>-->
-      <!--<view>折后价:{{item.pd_price}}元</view>-->
-      <!--<view>选购专业:{{item.class}}</view>-->
-    <!--</view>-->
-  <!--</view>-->
-<!--</view>-->
+<!--教材一览-->
 <view class="cu-bar bg-white">
   <view class='action'>
     <text class='icon-title text-orange '></text> 书籍列表
@@ -40,7 +6,7 @@
 </view>
 <view class="cu-list menu menu-avatar">
   <view class="cu-item margin-top" wx:for="{{book}}" wx:key="{{item.id}}" id="{{item._id}}" bindtap='moredetails'>
-    <view class="cu-avatar round lg" style="background-image:url('{{item.src.path}}');"></view>
+    <view class="cu-avatar lg" style="background-image:url('{{item.src.path}}');"></view>
     <view class='content'>
       <view class='text-grey'>书名:{{item.book_name}}</view>
       <view class='text-gray text-sm'>
