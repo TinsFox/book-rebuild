@@ -46,7 +46,7 @@ Page({
               }
               if (res.data.objects[0].manage == 0) { //学生登陆
                 wx.switchTab({
-                  url: '../function/function'
+                  url: '../home/home'
                 }),
                   wx.showToast({
                     title: '欢迎使用教材管理系统',

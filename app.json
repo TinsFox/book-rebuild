@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/login/login",
+    "pages/home/home",
     "pages/addbook/addbook",
     "pages/stader/stader",
     "pages/List/List",
@@ -24,7 +25,6 @@
     "pages/accessable/accessable",
     "pages/yigou/yigou",
     "pages/pingjiabiao/pingjiabiao",
-    "pages/function/function",
     "pages/mybook/mybook",
     "pages/suggestion/suggestion"
   ],
@@ -43,7 +43,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/function/function",
+        "pagePath": "pages/home/home",
         "iconPath": "images/功能.png",
         "selectedIconPath": "images/功能HL.png",
         "text": "功能"
