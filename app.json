@@ -17,7 +17,7 @@
     "pages/bookmessage/bookmessage",
     "pages/teacherplan/teacherplan",
     "pages/moredetails/moredetails",
-    "pages/person/person",
+    "pages/me/me",
     "pages/audit/audit",
     "pages/studentperson/student",
     "pages/index/index",
@@ -49,7 +49,7 @@
         "text": "功能"
       },
       {
-        "pagePath": "pages/person/person",
+        "pagePath": "pages/me/me",
         "iconPath": "images/我的.png",
         "selectedIconPath": "images/我的HL.png",
         "text": "我"
