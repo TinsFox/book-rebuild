@@ -1,7 +1,7 @@
 # bookLibrary-master
 # 项目说明：
 Github：
-https://github.com/TingerBoy/bookLibrary.git
+https://github.com/TinsFox/book-rebuild
 
 学生：2018008
 

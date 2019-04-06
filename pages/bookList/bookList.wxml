@@ -16,8 +16,8 @@
       </view>
     </view>
     <view class='action'>
-      <view class='text-grey text-xs'>{{item.price}}￥</view>
-      <view class="cu-tag round bg-red sm">现价：{{item.pd_price}}￥</view>
+      <view class='text-grey text-xs text-price'>{{item.price}}</view>
+      <view class="cu-tag round bg-red sm text-price">现价：{{item.pd_price}}</view>
     </view>
   </view>
 </view>
