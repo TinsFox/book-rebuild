@@ -5,16 +5,16 @@ var ac;
 var grids=[]
  var student = [
   //学生
-  { "name": "教材一览", "ico": "database.png", "url": "../bookList/bookList" },
+  { "name": "教材一览", "ico": "show.png", "url": "../bookList/bookList" },
   { "name": "教材订购", "ico": "footer-icon-03.png", "url": "../shopcar/shopcar" },
-  { "name": "教材评价", "ico": "edit.png", "url": "../accessable/accessable" }
+  { "name": "教材评价", "ico": "evaluation.png", "url": "../accessable/accessable" }
   
 ];
 var teacher=[
   //教师
-  { "name": "查看教材信息 ", "ico": "book.png", "url": "../bookList/bookList" },
+  { "name": "查看教材信息 ", "ico": "show.png", "url": "../bookList/bookList" },
   { "name": "选用教材", "ico": "edits.png", "url": "../choice/choice" },
-  { "name": "评价教材", "ico": "edit.png", "url": "../accessable/accessable" }
+  { "name": "评价教材", "ico": "evaluation.png", "url": "../accessable/accessable" }
 ];
 var ac=[
   //教务员
@@ -23,7 +23,7 @@ var ac=[
   { "name": "查询订购情况", "ico": "edits.png", "url": "../List/List" },
   { "name": "审核教材信息", "ico": "edits.png", "url": "../audit/audit" },
   { "name": "审核清单 ", "ico": "book.png", "url": "../stader/stader" },
-  { "name": "查看教学计划", "ico": "edits.png", "url": "../look_plan/look_plan" },
+  { "name": "查看教学计划", "ico": "show.png", "url": "../look_plan/look_plan" },
 ];
 var leader=[
   //领导
