@@ -1,0 +1,5 @@
+<template name="head">
+  <view class="page__hd i-header">
+    <view class="i-header-h1 h50">教材管理系统</view>
+  </view>
+</template>

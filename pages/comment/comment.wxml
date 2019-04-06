@@ -1,0 +1,25 @@
+<!--教材评价-->
+  <view class="book-content">
+    <view wx:for-items="{{book}}" wx:key="{{item.id}}">
+      <view class="book-list">
+        <view class="book-image">
+          <image src="{{item.image}}" mode="aspectFit"></image>
+        </view>
+        <view class="book-info" bindtap='moredetail'>
+          <view class="book-info-style" bindtap='moredetails'>
+            <view>书名:{{item.name}}</view>
+            <view>作者:{{item.author}}</view>
+            <view>价格:{{item.price}}元</view>
+            <view>折后价:{{item.pd_price}}元</view>
+            <view>选购专业:{{item.class}}</view>
+          </view>
+          <!--评价-->
+    <view class="loginBtnView">
+      <button class="comment" type="primary" plain="{{plain}}" 
+      disabled="{{disabled}}" bindtap="comment">我要评价</button>
+    </view>
+        </view>
+      </view>
+      <view class="line"></view>
+    </view>
+  </view>

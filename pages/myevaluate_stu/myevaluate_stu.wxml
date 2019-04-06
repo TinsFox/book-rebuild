@@ -1,0 +1,47 @@
+<!--pages/myevaluate/myevaluate.wxml-->
+<!--教材评价-->
+  <view class="book-content">
+    <view wx:for-items="{{book}}" wx:key="{{item.id}}" data-id="{{item.objectId}}">
+      <view class="book-list">
+        <view class="book-image">
+          <image src="{{item.src.path}}" mode="aspectFit"></image>
+        </view>
+        <view class="book-info">
+          <view class="book-info-style">
+            <view>书名:{{item.book_name}}</view>
+            <view>作者:{{item.author}}</view>
+            <view>价格:{{item.price}}元</view>
+            <view>折后价:{{item.pd_price}}元</view>
+            <view>选购专业:{{item.class}}</view>  
+          </view>
+        </view>
+      </view>
+      <view class="line"></view>
+
+    <view class="textarea-wrp" wx:for="{{comment}}" wx:for-item="xx" wx:key="xx.id">
+    <view class='container'>
+    <view class='evaluate_contant' wx:if="{{xx.id==item.id}}">
+        <view class='evaluate_item'>
+          <view class='evaluate_title'>{{evaluate_contant[0]}}</view>
+          <block wx:for="{{xx.goods}}" wx:key="index">
+              <image class="star-size" src="../../images/star3.png"></image>
+          </block>
+         </view>
+        <view class='evaluate_item'>
+          <view class='evaluate_title'>{{evaluate_contant[1]}}</view>
+          <block wx:for="{{xx.satisfaction}}" wx:key="index">
+              <image class="star-size" src="../../images/star3.png"></image>
+          </block>
+         </view>
+        
+        <view class="textarea-view"wx:if="{{xx.id==item.id}}" >{{xx.information}} </view>                 
+        
+      </view>
+      
+    </view>
+</view>
+      
+    </view>
+  </view>
+
+        

@@ -1,0 +1,23 @@
+<!--购书名单-->
+
+<view class='history-table-wrap'>
+  <view class="table">
+    <view class="tr bg-w" >
+      <view class="th">姓名</view>
+      <view class="th">学号</view>
+      <view class="th">班级</view>
+      <view class="th">数量</view>
+    </view>
+
+    
+      <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+      <view class="tr bg-g">
+        <view class="td">{{item.name}}</view>
+        <view class="td">{{item.num}}</view>
+        <view class="td">{{item.grade}}</view>
+        <view class="td">{{item.count}}</view>
+      </view>
+      </block>
+    
+  </view>
+</view>

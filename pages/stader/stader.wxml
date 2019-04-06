@@ -1,0 +1,27 @@
+<!--教材订购情况-->
+ <view class='history-table-wrap'>
+ 
+    <view class="table">
+      <view class="tr">
+          <view class="th th3">院系</view>
+          <view class="th th3">班级</view>
+          <view class="th th3">教材名称</view>
+          <view class="th th3">数量</view>
+          <view class="th th3">总价(折前)</view>
+          <view class="th th3">总价(折后)</view>
+          <view class="th th3">购买名单</view>
+      </view>
+      
+      <view wx:for-items="{{book}}" wx:key="{{item.id}}">
+      <view class="tr">
+          <view class="td th3">{{item.department}}</view>
+          <view class="td th3">{{item.grade}}</view>
+          <view class="td th3">{{item.bookname}}</view>
+          <view class="td th3">{{item.count}}</view>
+          <view class="td th3">{{item.price}}</view>
+          <view class="td th3">{{item.pd_price}}</view>
+          <view class="td th3" catchtap="toOrders">详细名单</view>
+      </view>
+    </view>
+    </view>
+ </view>

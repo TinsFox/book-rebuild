@@ -1,0 +1,4 @@
+<view class='open-info'>
+    <open-data type="userAvatarUrl" class='img'></open-data>
+    <open-data type="userNickName" class="nickname"></open-data>
+</view>

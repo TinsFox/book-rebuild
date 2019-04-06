@@ -1,0 +1,126 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="page__bd page__bd_spacing">
+    <view class="weui-cells__title">教材录入</view>
+    </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">序号:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="num" class="weui-input" placeholder="请输入序号" />
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">书名:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="bookname" class="weui-input" placeholder="请输入书名" />
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">出版社:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="press" class="weui-input" placeholder="请输入出版社" />
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">选用院系:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="class" class="weui-input" placeholder="请输入院系" />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">ISBN:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="ISBN" class="weui-input" placeholder="请输入ISBN" />
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">作者:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="author" class="weui-input" placeholder="请输入作者" />
+                </view>
+            </view>
+
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">版次:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="edition" class="weui-input" placeholder="请输入版次" />
+                </view>
+            </view>
+
+                <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">出版年月:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input name="publishedtime" class="weui-input" placeholder="请输入出版年月" />
+                </view>
+            </view>
+                <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">单价:</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input  name="price" class="weui-input" placeholder="请输入单价" type="number"/>
+                </view>
+            </view>
+            <!--<view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">折后价:</view>
+                </view>
+                -- <view class="weui-cell__bd">
+                    <input name="pd_price" class="weui-input" placeholder="请输入折后价" />
+                </view> 
+            </view>-->
+        </view>
+    <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" bindtap="clickCheck" formType="submit">录入</button>
+</view>
+    <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" bindtap="clickCheck3" >一键导入</button>
+</view>
+
+</form>
+ <!-- 弹出校对信息窗口 -->
+  <modal class="modal" hidden="{{hideModal}}" bindconfirm="modalSubmit" bindcancel="modalCancel"
+   confirmText="确认提交" cancelText="修正" showCancel="ture">
+    <view>
+      <text>您的录入的教材</text>
+    </view>
+<view>
+      <text>序号：</text>{{num}}</view>
+    <view>
+      <text>书名：</text>{{bookname}}</view>
+    <view>
+    <view>
+      <text>选用院系：</text>{{class}}</view>
+      <text>出版社：</text>{{press}}</view>
+    <view>
+      <text>ISBN：</text>{{ISBN}}</view>
+    <view>
+      <text>作者：</text>{{author}}</view>
+    <view>
+      <text>版次：</text>{{edition}}</view>
+      <view>
+      <text>出版年月：</text>{{publishedtime}}</view>
+      <view>
+      <text>单价：</text>{{price}}</view>
+
+  </modal>

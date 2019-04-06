@@ -1,0 +1,28 @@
+/* pages/look_plan/look_plan.wxss */
+.page_bd{
+    padding:0px;
+    background-color: rgb(57, 209, 236);
+}
+.body_head{
+
+    background-color:rgb(32, 76, 221);
+    color:aliceblue;
+    padding: 10px;
+}
+.display_show{
+    display: block;
+    border: 1px solid;    
+    border-color: rgb(78, 210, 233);
+    padding: 10px;
+}
+.display_none{
+    display: none;
+}
+.class_plan{
+  margin:15px;
+}
+.line{
+  width:100%;
+  height: 1px;
+  background: white;
+}

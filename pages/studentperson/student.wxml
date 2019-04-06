@@ -1,0 +1,20 @@
+<!--学生个人中心-->
+<view class="userinfo">
+    <view class='open-info'>
+        <view class="logo"><open-data type="userAvatarUrl" class="userinfo" id="userinfo"></open-data></view>
+        <open-data type="userNickName" class="nickname"></open-data>
+      </view>
+  </view>
+  <view class="person-list">
+    <view class="list-item" catchtap="toOrder2">
+      <image class="item-image" src="../../images/yigou.png"></image>
+      <text class="item-text">已购教材</text>
+    </view>
+    <view class="person-line"></view>
+    <view class="list-item"catchtap="toOrder">
+      <image class="item-image" src="../../images/pingjia.png"></image>
+      <text class="item-text">我的评价</text>
+    </view>
+    <view class="person-line"></view>
+  </view>
+  

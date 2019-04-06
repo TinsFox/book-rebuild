@@ -1,0 +1,20 @@
+<!--pages/look_plan/look_plan.wxml-->
+<view class="class_plan">
+  <view wx:for-items="{{plan}}" wx:key="{{item.id}}">
+    <view class="all_plan">
+      <view class="page_bd">
+        <view class="body_head" bindtap="showitem" data-id="{{item.id}}">课程名称:{{item.classname}}</view>
+        	<view class="{{item.open?'display_show':'display_none'}}">课程代码:{{item.classcode}}</view>
+        	<view class="{{item.open?'display_show':'display_none'}}">开课院系:{{item.faculty}}</view>
+        	<view class="{{item.open?'display_show':'display_none'}}">年级:{{item.grade}}</view>
+        	<view class="{{item.open?'display_show':'display_none'}}">学历:{{item.qualification}}</view>
+        	<view class="{{item.open?'display_show':'display_none'}}">专业:{{item.major}}</view>
+        	<view class="{{item.open?'display_show':'display_none'}}">班级:{{item.class}}</view>
+          <view class="{{item.open?'display_show':'display_none'}}">学分:{{item.credit}}</view>
+          <view class="{{item.open?'display_show':'display_none'}}">课时:{{item.period}}</view>
+     </view>
+     <view class="line"></view>
+   </view>
+  </view>
+</view>
+

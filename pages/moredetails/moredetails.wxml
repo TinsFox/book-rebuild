@@ -1,0 +1,48 @@
+<!--教材详细信息-->
+<view class='history-table-wrap'>
+ <view wx:for-items="{{book}}" wx:key="{{item.id}}">
+ <view wx:for="{{book_message}}" wx:for-item="xx" wx:key="xx.id">
+ <view wx:if="{{xx.id == item._id}}">
+    <view class="table">
+      <view class="tr">
+          <view class="th th1">属性</view>
+          <view class="th th3">详细信息</view>
+      </view>
+      <view class="tr">
+          <view class="td td1">序号</view>
+          <view class="td td3">{{item.bc}}</view>
+      </view>
+            <view class="tr">
+          <view class="td td1">书名</view>
+          <view class="td td3">
+          <text>{{item.book_name}}</text></view>
+      </view>
+            <view class="tr">
+          <view class="td td1">出版社</view>
+          <view class="td td3">{{item.cbs}}</view>
+      </view>
+            <view class="tr">
+          <view class="td td1">ISBN</view>
+          <view class="td td3">{{item.ISBN}}</view>
+      </view>
+            <view class="tr">
+          <view class="td td1">作者</view>
+          <view class="td td3">{{item.author}}</view>
+      </view>
+            <view class="tr">
+          <view class="td td1">版次</view>
+          <view class="td td3">第三次</view>
+      </view>
+            <view class="tr">
+          <view class="td td1">出版年月</view>
+          <view class="td td3">{{item.time}}</view>
+      </view>
+            <view class="tr">
+          <view class="td td1">单价</view>
+          <view class="td td3">{{item.price}}</view>
+      </view>
+    </view>
+  </view>
+  </view>
+  </view>
+ </view>

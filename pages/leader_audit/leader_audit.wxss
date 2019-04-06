@@ -1,0 +1,152 @@
+
+.header {
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #d6d6d6;
+}
+.header .header_con {
+  width: 700rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  color: #333;
+  font-size: 30rpx;
+}
+
+.header .header_con .right{
+  color: #ff4965;
+}
+.bottom{
+  width: 100%;
+  height: 100rpx;
+  border-top: 1rpx solid #d6d6d6;
+  background-color: #fff;
+  position: fixed;
+  left: 0rpx;
+  bottom: 0rpx;
+}
+
+.flex_between{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex_start{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex_end{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bottom .left{
+  margin-left: 25rpx;
+}
+.bottom .left .select_none{
+  width: 60rpx;
+  height: 60rpx;
+  border: 1rpx solid #d6d6d6;
+  border-radius: 50%;
+}
+.bottom .right .adopt{
+  width: 220rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #49ff58;
+  color: #fff;
+}
+.bottom .right .sure{
+  width: 220rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #ff4949;
+  color: #fff;
+}
+
+.book-content{
+  margin-bottom: 250rpx;
+}
+
+.book-list{
+  display: flex;
+  width: 93.3%;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content:flex-start;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.book-image{
+  flex: 0 0 32%;
+  box-sizing: border-box;
+  min-height: 242rpx;
+}
+/*新增wxss*/
+.lefts{
+  margin-top:90rpx;
+  margin-left: 20rpx;
+}
+.icon_none{
+  width: 60rpx;
+  height: 60rpx;
+  border: 1rpx solid #d6d6d6;
+  border-radius: 50%;
+}
+/****/
+.book-image image{
+  
+  height: 242rpx;
+  width: 242rpx;
+}
+
+
+.book-info{
+  background-color: #fff;
+  flex: 0 0 66%;
+  box-sizing: border-box;
+  height: 242rpx;
+  margin-left: 20rpx;
+}
+
+.book-info-style{
+  height: 244rpx;
+  background-color: white;
+}
+
+.book-info-style view{
+  display: block;
+  font-size: 24rpx;
+  margin-bottom: 8rpx;
+  width: 460rpx;
+  text-overflow:ellipsis; 
+  overflow:hidden; 
+  white-space:nowrap; 
+  margin-top: 8rpx;
+}
+
+.line{
+  width: 100%;
+  border: 1px solid #eee;
+}
+.aus{
+  height: 65rpx;
+  font-size: 30rpx;
+  background-color: white;
+  margin-right: 20rpx;
+  margin-left: 30rpx;
+}
+.auf{
+  height: 65rpx;
+  font-size: 30rpx;
+  background-color: white;
+  margin-right: 20rpx;
+  margin-left: 30rpx;
+}

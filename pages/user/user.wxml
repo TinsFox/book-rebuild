@@ -1,0 +1,20 @@
+<!--pages/user/user.wxml-->
+<text>pages/user/user.wxml</text>
+<view>
+  <view class="container">功能大全</view>
+    <view class='fx-zx'>
+      <button size="default">
+          <image src="/image/录入报告1.png"></image>录入教学计划</button>
+      <button size="default">
+          <image src="/image/录入.png"></image>录入教材信息</button>
+      <button size="default">
+          <image src="/image/搜索.png"></image>查询订购情况</button>
+  </view>
+
+  <view class='fx-zx'>
+      <button size="default">
+          <image src="/image/审核.png"></image>审核教材信息</button>
+      <button size="default">
+          <image src="/image/清单.png"></image>审核清单信息</button>
+  </view>
+</view>

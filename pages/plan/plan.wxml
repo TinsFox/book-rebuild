@@ -1,0 +1,137 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="page__bd page__bd_spacing">
+    <view class="weui-cells__title">教学计划</view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+
+   <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">课程名称:</view>
+        </view>
+        <view class="weui-cell__bd">
+        <input name="classname" class="weui-input" placeholder="请输入课程名称" />
+      </view>
+    </view>
+
+
+  
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">课程代码:</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="classcode" class="weui-input" placeholder="请输入课程代码" />
+      </view>
+    </view>
+
+
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">开课院系:</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="faculty" class="weui-input" placeholder="请输入开课院系" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">年级:</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="grade"class="weui-input" placeholder="请输入年级" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">学历:</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="qualification"class="weui-input" placeholder="请输入学历" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">专业:</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="major" class="weui-input" placeholder="请输入专业" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">班级:</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="class" class="weui-input" placeholder="请输入班级" type="number" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">学分:</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="credit" class="weui-input" placeholder="请输入学分" type="number" />
+      </view>
+    </view>
+
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">课时:</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="period" class="weui-input" placeholder="请输入课时" type="number" />
+      </view>
+    </view>
+
+    <!--<view class="weui-btn-area">
+                <button class="weui-btn" type="primary" bindtap="addBook">开始录入</button>
+            </view>-->
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" formType="submit" bindtap="clickCheck">录入</button>
+      <button class="weui-btn" type="primary" formType="submit" bindtap="clickCheck3">一键导入</button>
+    </view>
+    
+
+        <!-- <view class="weui-btn-area">
+      <button class="weui-btn" type="primary"bindtap="clickCheck2">查看所录信息</button>
+    </view> -->
+
+
+  </view>
+</form>
+
+ <!-- 弹出校对信息窗口 -->
+  <modal class="modal" hidden="{{hideModal}}" bindconfirm="modalSubmit" bindcancel="modalCancel"
+   confirmText="确认提交" cancelText="修正" showCancel="ture">
+    <view>
+    <text>录入结束后返回首页\n</text>
+      <text>您的教学计划如下：</text>
+    </view>
+    <view>
+      <text>课程名称：</text>{{classname}}</view>
+    <view>
+      <text>课程代码：</text>{{classcode}}</view>
+    <view>
+      <text>开课院系：</text>{{faculty}}</view>
+    <view>
+      <text>年级：</text>{{grade}}</view>
+    <view>
+      <text>学历层次：</text>{{qualification}}</view>
+    <view>
+      <text>专业：</text>{{major}}</view>
+    <view>
+      <text>班级：</text>{{class}}</view>
+    <view>
+      <text>学分：</text>{{credit}}</view>
+    <view>
+      <text>总课时：</text>{{period}}</view>
+
+
+  </modal>

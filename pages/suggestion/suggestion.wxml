@@ -1,0 +1,8 @@
+<view class="font_size" style="width: 100%;margin-left: 0;">
+    <view>
+        <textarea class="feedbackText" placeholder="请提出您的宝贵意见!" bindinput="setContent"></textarea>
+    </view>
+</view>
+<view>
+    <button class="submit_button" bindtap="submitOpinion" type='primary'>确定</button>
+</view>

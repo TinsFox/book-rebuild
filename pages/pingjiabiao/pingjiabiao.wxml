@@ -1,0 +1,37 @@
+<!--评价页面-->
+
+<view class='container'>
+    <view class='evaluate_contant'>
+    <!--外层循环控制有几个评价条目  -->
+      <block wx:for='{{evaluate_contant}}' wx:key='' wx:for-index='idx'>
+        <view class='evaluate_item'>
+          <view class='evaluate_title'>{{item}}</view>
+
+          <!--星星评价  -->
+          <view class='evaluate_box'>
+          <!--内层循环展示每个评价条目的星星  -->
+            <block wx:for="{{stars}}" wx:key=''>
+              <image class="star-image" style="left: {{item*80}}rpx" src="{{scores[idx] > item ?(scores[idx]-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+                <view class="item" style="left:0rpx" data-score="{{item + 0.5}}" data-idx='{{idx}}' bindtap="selectLeft"></view>
+                <view class="item" style="left:20rpx" data-score="{{item + 1}}" data-idx='{{idx}}' bindtap="selectRight"></view>
+              </image>
+              
+            </block>
+
+            <!-- 此循环是点击星星后显示的评价 -->
+             
+                <view style="margin-left:420rpx"></view>
+              
+          </view>
+          
+        </view>
+        
+      </block>
+        
+        <view class="textarea-wrp">
+        <textarea auto-focus="false"  style="height: 250rpx" placeholder="书本满足您的需求吗？请您说说它的优点和不足之处。" bindinput='searchInputEvent' value="{{infofrominput}}">
+        </textarea>
+      </view>
+      <button class='submit_button' bindtap='submit_evaluate' type='primary'>提交</button>
+    </view>
+</view>
