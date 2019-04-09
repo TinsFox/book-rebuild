@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -61,9 +61,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 3,
 					"name": "购物车",
-					"pathName": "pages/shopcar/shopcar",
+					"pathName": "pages/cart/cart",
+					"query": "",
 					"scene": null
 				}
 			]

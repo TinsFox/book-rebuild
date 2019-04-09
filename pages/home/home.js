@@ -13,7 +13,7 @@ var grids=[]
 var teacher=[
   //教师
   { "name": "查看教材信息 ", "ico": "show.png", "url": "../bookList/bookList" },
-  { "name": "选用教材", "ico": "edits.png", "url": "../choice/choice" },
+  { "name": "选用教材", "ico": "choseCopy.png", "url": "../choice/choice" },
   { "name": "评价教材", "ico": "evaluation.png", "url": "../accessable/accessable" }
 ];
 var ac=[

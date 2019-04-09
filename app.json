@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/home/home",
+    "pages/login/login",
     "pages/addbook/addbook",
     "pages/stader/stader",
     "pages/List/List",
@@ -26,7 +26,8 @@
     "pages/yigou/yigou",
     "pages/pingjiabiao/pingjiabiao",
     "pages/mybook/mybook",
-    "pages/suggestion/suggestion"
+    "pages/suggestion/suggestion",
+    "pages/cart/cart"
   ],
 
     "resizable": true,

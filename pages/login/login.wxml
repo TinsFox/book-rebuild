@@ -15,7 +15,7 @@
     <view class="cu-form-group">
       <image class="keyImage" src="../../images/key.png"></image>
       <view class='title'>密码</view>
-      <input placeholder="请输入学号或工号" class='radius' name='input' bindinput="passwordInput" password='ture'></input>
+      <input placeholder="请输入密码" class='radius' name='input' bindinput="passwordInput" password='ture'></input>
     </view>
     <!--登录-->
     <view class="padding flex flex-direction">
