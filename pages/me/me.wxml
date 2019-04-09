@@ -1,9 +1,21 @@
 <!--pages/function.wxml-->
 <!--grids-->
+<!-- <<<<<<< HEAD -->
 <!-- <import src="../../style/header.wxml" />
 <view class="page">
+=======
+<view class='UCenter-bg'>
+  <image src='/images/book.png' class='png' mode='widthFix'></image>
+  <view class='text-xl'>教材管理系统
+  </view>
+  <view class='margin-top-sm'>
+    <text>By:咕咕咕大队</text>
+  </view>
+  <image src='https://image.weilanwl.com/gif/wave.gif' mode='scaleToFill' class='gif-wave'></image>
+</view>
+>>>>>>> d50a4bf1c36559f9e11263bc385cb28a0107c744
 
-  <template is="head"></template>
+<view class="page">
   <view class="page__bd">
     <view class="weui-grids">
       <block wx:for="{{grids}}" wx:key="{{index}}">
@@ -42,7 +54,7 @@
           <view class="weui-grid__label_view">{{item.name}}</view>
         </navigator>
       </block>
-      <block wx:for="{{other}}">
+      <block wx:for="{{other}}" wx:key="{{index}}" >
       <view class="cu-item arrow" catchtap='{{item.url}}'>
       <image class="weui-grid__icon_view" src="/images/{{item.ico}}" />
           <view class="weui-grid__label_view">{{item.name}}</view>
