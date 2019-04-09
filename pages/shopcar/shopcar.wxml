@@ -1,4 +1,16 @@
-<view class="main">
+<view class="cu-bar bg-white solid-bottom canui-foor-fixed">
+    <view class="action canui-checked"> <checkbox class='round red' checked></checkbox> 全选</view>
+    <view class="action canui-delete"> <button class='cu-btn icon-delete'></button> </view>
+    <view class='submit canui-price'>合计 <text class="text-red text-price">200.00</text></view>
+    <view class='bg-red submit canui-submit' bindtap='submit'>去结算 ( 2 )</view>
+</view>
+
+<!-- <view class='action-btn-sum'>
+    <button class='cu-btn'>-</button>
+    <input class='ca-sum' name='input' value="1"></input>
+    <button class='cu-btn'>+</button>
+</view> -->
+<!-- <view class="main">
     <view wx:if="{{hasList}}">
         <view class="cart-box">
             <view class="cart-list" wx:for="{{carts}}" wx:key="{{index}}">
@@ -27,4 +39,4 @@
     <view wx:else>
         <view class="cart-no-data">购物车是空的哦~</view>
     </view>
-</view>
+</view> -->

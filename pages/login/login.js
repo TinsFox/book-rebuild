@@ -1,7 +1,15 @@
 Page({
   data: {
     phone: '',
-    password: ''
+    password: '',
+    tip:[
+      { title: "测试帐号和密码", phone: "点击复制" },
+      { title: "学生", phone: "2018008"},
+      { title: "教师", phone: "2018009" },
+      { title: "教务员", phone: "2018002" },
+      { title: "领导", phone: "2018005" },
+      { title: "统一密码", phone: "000000" },
+    ]
   },
   // 获取输入账号
   phoneInput: function (e) {
@@ -24,6 +32,9 @@ Page({
         duration: 2000
       })
     } else {
+      wx.showLoading({
+        title: '正在登录',
+      })
       let query = new wx.BaaS.Query();
       query.compare('user_id', '=', this.data.phone);
       let Product = new wx.BaaS.TableObject("users");
@@ -31,6 +42,7 @@ Page({
         if (this.data.password == res.data.objects[0].passwd) {
           wx.login({
             success: function () {
+              wx.hideLoading()
               wx.showToast({
                 title: '登录成功',
                 icon: 'success',
@@ -53,12 +65,10 @@ Page({
                     icon: 'none',
                     duration: 2000
                   })
-                console.log("学生登陆成功")
               }
               if (res.data.objects[0].manage == 5) { //教务员
                 wx.switchTab({
                   url: '../home/home'
-
                 }),
                   wx.showToast({
                     title: '欢迎使用教材管理系统',
@@ -106,5 +116,16 @@ Page({
         })
       });
     }
-  }
+  },
+  CopyLink(e) {
+    wx.setClipboardData({
+      data: e.currentTarget.dataset.link,
+      success: res => {
+        wx.showToast({
+          title: '已复制',
+          duration: 1000,
+        })
+      }
+    })
+  },
 })

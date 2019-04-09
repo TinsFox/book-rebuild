@@ -1,10 +1,18 @@
 // page/component/new-pages/cart/cart.js
+const app = getApp();   
 Page({
   data: {
+    StatusBar: app.globalData.StatusBar,
+    CustomBar: app.globalData.CustomBar,
     carts: [], // 购物车列表
     hasList: false, // 列表是否有数据
     totalPrice: 0, // 总价，初始为0
     selectAllStatus: true // 全选状态，默认全选
+  },
+  submit: function () {
+    wx.navigateTo({
+      url: '/pages/scar/order/index'
+    })
   },
   onShow() {
     // 实例化查询对象
