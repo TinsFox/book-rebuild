@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -64,6 +64,13 @@
 					"id": 3,
 					"name": "购物车",
 					"pathName": "pages/cart/cart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "教材评价",
+					"pathName": "pages/accessable/accessable",
 					"query": "",
 					"scene": null
 				}

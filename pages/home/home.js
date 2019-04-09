@@ -1,4 +1,3 @@
-// pages/interface/index.js
 var student;
 var teacher;
 var ac;

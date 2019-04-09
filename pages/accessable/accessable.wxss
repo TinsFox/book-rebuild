@@ -1,5 +1,5 @@
 .book-content{
-  margin-top: 30rpx;
+  margin-top: 3rpx;
 }
 
 .book-list{

@@ -1,5 +1,4 @@
 /* pages/function.wxss */
-
 .UCenter-bg {
   background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554562291180&di=d78ce181c327ba93267636faeacf597f&imgtype=0&src=http%3A%2F%2Fbpic.ooopic.com%2F16%2F25%2F06%2F16250603-fd6f99ec13429349c963bb81109efc59-0.jpg);
   background-size: cover;
@@ -15,8 +14,6 @@
   font-weight: 300;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
-
-
 .UCenter-bg text {
   opacity: 0.8;
 }
