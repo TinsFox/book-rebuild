@@ -34,17 +34,17 @@ Page({
     grids:grids
   },
   onLoad: function () {
-    wx.checkSession({
-      success: function () {
-        //session_key 未过期，并且在本生命周期一直有效
-        if (wx.getStorageSync('user_id') == '') {
-          wx.clearStorageSync()
-          wx.reLaunch({
-            url: '../login/login'
-          })
-        }
-      }
-    })
+    // wx.checkSession({
+    //   success: function () {
+    //     //session_key 未过期，并且在本生命周期一直有效
+    //   }
+    // })
+    if (wx.getStorageSync('user_id') == '') {
+      wx.clearStorageSync()
+      wx.reLaunch({
+        url: '../login/login'
+      })
+    }
     var value = wx.getStorageSync('manage')
     //学生
     if(value==0){
