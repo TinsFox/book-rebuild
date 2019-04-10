@@ -1,17 +1,108 @@
-.font_size {
-    font-size: 15px;
+/**index.wxss**/
+
+.radio-view {
+  margin-left: 5%;
+  padding-bottom:18rpx;
+  margin-top:50rpx;
 }
 
-.submit_button {
-  width: 80%;
-  color: #f9f9f9;
+.attr_value {
+  float: left;
+  margin-right: 20rpx;
+  position: relative;
+  height: 60rpx;
 }
 
-.feedbackText {
-    margin: 5px auto 10px auto;
-    font-size: 30rpx;
-    height: 300rpx;
-    border: 1px solid #e0e0e0;
-    background-color: #fff;
-    text-align: center;
+.radio_label {
+  font-size: 28rpx;
+  display: block;
+  padding: 10rpx 20rpx;
+  height: 40rpx;
+  line-height: 40rpx
 }
+
+radio {
+  box-sizing: border-box;
+  background: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+radio .wx-radio-input {
+  margin-right: 15rpx;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: none;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+}
+
+radio .wx-radio-input.wx-radio-input-checked {
+  background-color: transparent;
+  border-color: #3a96ff;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+  content: '\2713';
+  font-family: "iconfont" !important;
+  font-size: 30rpx;
+  color: #3a96ff;
+  top: auto;
+  left: auto;
+  right: -4rpx;
+  bottom: -4rpx;
+  transform: translate(0, 0) scale(1);
+  -webkit-transform: translate(0, 0) scale(1);
+}
+
+
+textarea {
+  background-color: white;
+  width: 85%;
+  height: 350rpx;
+  padding: 20rpx;
+  border: #3a96ff solid 1rpx;
+  margin: auto;
+  margin-top: 80rpx;
+  border-radius: 30rpx;
+  font-size: 28rpx;
+  caret-color: #3a96ff
+}
+
+.submit-btn {
+  background-color: #3a96ff;
+  color: white;
+  position: fixed;
+  right: 50rpx;
+  bottom: 70rpx;
+  border-radius: 50rpx;
+  font-size: 30rpx;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.radio-group{
+  display: block;
+}
+
+ switch.green[checked] .wx-switch-input, switch[checked] .wx-switch-input,
+checkbox.green[checked] .wx-checkbox-input, checkbox[checked] .wx-checkbox-input,
+radio.green[checked] .wx-radio-input, radio[checked] .wx-radio-input {
+  background-color: #ffffff00 !important;
+} 

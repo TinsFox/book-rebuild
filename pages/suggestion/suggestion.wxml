@@ -1,8 +1,24 @@
-<view class="font_size" style="width: 100%;margin-left: 0;">
+<!-- <view class="font_size" style="width: 100%;margin-left: 0;">
     <view>
         <textarea class="feedbackText" placeholder="请提出您的宝贵意见!" bindinput="setContent"></textarea>
     </view>
 </view>
 <view>
     <button class="submit_button" bindtap="submitOpinion" type='primary'>确定</button>
+</view> -->
+<view>
+  <form>
+    <view>
+      <view class='radio-view'>
+        <radio-group class="radio-group">
+          <view class="attr_value" wx:for="{{radios}}" wx:key="{{item.name}}">
+            <radio color='' checked='{{item.checked}}' data-index='{{index}}' bindtap='radioChange'></radio>
+            <label class='radio_label'>{{item.value}}</label>
+          </view>
+        </radio-group>
+      </view>
+      <textarea class='' bindinput="setContent" placeholder='写下你的宝贵意见吧~'></textarea>
+    </view>
+    <button class='submit-btn' form-type='submit' bindtap="submitOpinion">提交意见</button>
+  </form>
 </view>

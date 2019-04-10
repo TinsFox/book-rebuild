@@ -1,12 +1,28 @@
+
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+    radios: [
+      { name: 'product', value: '功能建议', checked: 'true' },
+      { name: 'bug', value: '程序错误' },
+      { name: 'tease', value: '吐槽' },
+    ]
   },
+  /**
+   * 意见反馈选择改变
+   */
+  radioChange: function (e) {
+    var _this = this;
+    var _index = e.target.dataset.index;
+    _this.setData({
 
+    })
+    console.log(_this.data.radios[_index]);
+  },
   /**
    * 生命周期函数--监听页面加载
    */

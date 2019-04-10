@@ -331,12 +331,12 @@ checkbox.olive[checked] .wx-checkbox-input, radio.olive[checked] .wx-radio-input
   color: #fff !important;
 }
 
-switch.green[checked] .wx-switch-input, switch[checked] .wx-switch-input,
+ switch.green[checked] .wx-switch-input, switch[checked] .wx-switch-input,
 checkbox.green[checked] .wx-checkbox-input, checkbox[checked] .wx-checkbox-input,
 radio.green[checked] .wx-radio-input, radio[checked] .wx-radio-input {
   background-color: #39b54a !important;
   color: #fff !important;
-}
+} 
 
 switch.cyan[checked] .wx-switch-input, checkbox.cyan[checked] .wx-checkbox-input,
 radio.cyan[checked] .wx-radio-input {
@@ -548,7 +548,7 @@ checkbox.white[checked] .wx-checkbox-input, radio.white[checked] .wx-radio-input
           按钮
  ==================== */
 
-.cu-btn {
+/* .cu-btn {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -658,7 +658,7 @@ button.icon.lg {
 .cu-btn[disabled] {
   opacity: 0.6;
   color: #fff;
-}
+} */
 
 /* ==================
           徽章
