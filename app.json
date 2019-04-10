@@ -27,10 +27,10 @@
     "pages/pingjiabiao/pingjiabiao",
     "pages/mybook/mybook",
     "pages/suggestion/suggestion",
-    "pages/cart/cart"
+    "pages/cart/cart",
+    "pages/orders/orders"
   ],
-
-    "resizable": true,
+  "resizable": true,
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

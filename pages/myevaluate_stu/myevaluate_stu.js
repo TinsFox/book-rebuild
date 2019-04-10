@@ -16,9 +16,6 @@ Page({
     // 页面初始化 options为页面跳转所带来的参数
     this.fetch();
     var _this = this;
-
-    //获取
-
     try {
       var comment = wx.getStorageSync('comment')
       var that=this;
@@ -73,6 +70,4 @@ Page({
       //err
     })
   },
-  
- 
 })
