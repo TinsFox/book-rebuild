@@ -15,11 +15,21 @@
     <view class="cu-form-group">
       <image class="keyImage" src="../../images/key.png"></image>
       <view class='title'>密码</view>
-      <input placeholder="请输入学号或工号" class='radius' name='input' bindinput="passwordInput" password='ture'></input>
+      <input placeholder="请输入密码" class='radius' name='input' bindinput="passwordInput" password='ture'></input>
     </view>
     <!--登录-->
     <view class="padding flex flex-direction">
-      <button class="cu-btn bg-green lg"  open-type='getUserInfo' bindtap="login">登录</button>
+      <button class="cu-btn bg-green lg" open-type='getUserInfo' bindtap="login">登录</button>
+    </view>
+  </view>
+</view>
+<!-- 测试信息 -->
+<view class="cu-list menu card-menu shadow-lg">
+  <view class="cu-item" wx:for="{{tip}}" wx:key>
+    <view class='content' bindtap='CopyLink' data-link='{{item.phone}}'>
+      <text class='icon-github text-grey'></text>
+      <text class='text-grey'>{{item.title}}：</text>
+      <text class='text-grey'>{{item.phone}}</text>
     </view>
   </view>
 </view>

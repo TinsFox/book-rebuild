@@ -1,11 +1,11 @@
 Page({
   data: {
-    carts: [],               // 购物车列表
-    hasList: false,          // 列表是否有数据
-    totalPrice: 0,           // 总价，初始为0
-    selectAllStatus: true,    // 全选状态，默认全选
-    obj: {
-      name: "hello"
+    carts:[],               // 购物车列表
+    hasList:false,          // 列表是否有数据
+    totalPrice:0,           // 总价，初始为0
+    selectAllStatus:true,    // 全选状态，默认全选
+    obj:{
+        name:"hello"
     }
   },
   onShow() {
@@ -31,15 +31,15 @@ Page({
   deleteList(e) {
     const index = e.currentTarget.dataset.index;
     let carts = this.data.carts;
-    carts.splice(index, 1);
+    carts.splice(index,1);
     this.setData({
       carts: carts
     });
-    if (!carts.length) {
+    if(!carts.length){
       this.setData({
         hasList: false
       });
-    } else {
+    }else{
       this.getTotalPrice();
     }
   },
@@ -65,7 +65,7 @@ Page({
    * 绑定加数量事件
    */
   addCount(e) {
-
+    
     const index = e.currentTarget.dataset.index;
     let carts = this.data.carts;
     let num = carts[index].num;
@@ -87,7 +87,7 @@ Page({
     const obj = e.currentTarget.dataset.obj;
     let carts = this.data.carts;
     let num = carts[index].num;
-    if (num <= 1) {
+    if(num <= 1){
       return false;
     }
     num = num - 1;
@@ -97,8 +97,8 @@ Page({
     });
     this.getTotalPrice();
   },
-  onLoad: function () {
-    var that = this
+  onLoad:function(){
+    var that=this
     let query = new wx.BaaS.Query()
     let tableID = 53564;
     let Chord = new wx.BaaS.TableObject(tableID)
@@ -120,8 +120,8 @@ Page({
   getTotalPrice() {
     let carts = this.data.carts;                  // 获取购物车列表
     let total = 0;
-    for (let i = 0; i < carts.length; i++) {         // 循环列表得到每个数据
-      if (carts[i].selected) {                     // 判断选中才会计算价格
+    for(let i = 0; i<carts.length; i++) {         // 循环列表得到每个数据
+      if(carts[i].selected) {                     // 判断选中才会计算价格
         total += carts[i].num * carts[i].pd_price;   // 所有价格加起来
       }
     }

@@ -1,52 +1,24 @@
-<!--pages/function.wxml-->
-<!--grids-->
-<!-- <import src="../../style/header.wxml" /> -->
 <view class='UCenter-bg'>
   <image src='/images/book.png' class='png' mode='widthFix'></image>
   <view class='text-xl'>教材管理系统
   </view>
   <view class='margin-top-sm'>
-    <text>By:咕咕咕大队</text>
+    <text>By: 咕咕咕大队</text>
   </view>
   <image src='https://image.weilanwl.com/gif/wave.gif' mode='scaleToFill' class='gif-wave'></image>
 </view>
 
-<view class="page">
-  <view class="page__bd">
-    <view class="weui-grids">
-      <block wx:for="{{grids}}" wx:key="{{index}}">
-        <navigator bindtap="{{item.click}}" class="weui-grid" wx:if="{{item.click}}" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/images/{{item.ico}}" />
-          <view class="weui-grid__label">{{item.name}}</view>
-        </navigator>
-        <navigator url="{{item.url}}" class="weui-grid" wx:if="{{!item.click}}" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="/images/{{item.ico}}" />
-          <view class="weui-grid__label">{{item.name}}</view>
-        </navigator>
-      </block>
-    </view>
-  </view>
-</view>
-<!-- 
-<view class='UCenter-bg'>
-  <image src='/images/book.png' class='png' mode='widthFix'></image>
-  <view class='text-xl'>教材管理系统
-  </view>
-  <view class='margin-top-sm'>
-    <text>By:咕咕咕大队</text>
-  </view>
-  <image src='https://image.weilanwl.com/gif/wave.gif' mode='scaleToFill' class='gif-wave'></image>
-</view>
-
-
-<view class='padding flex text-center text-grey bg-white shadow-warp'>
-  <view class='flex flex-sub flex-direction solid-right' wx:for="{{grids}}" wx:key="{{index}}">
-    <block bindtap="{{item.click}}" >
-      <view class="margin-top-sm">
-      <text class="icon-attentionfill"></text>
-        <!-- <image class="weui-grid__icon" src="/images/{{item.ico}}" /> -->
-<!-- </view>
-      <view class="text-xxl text-blue">{{item.name}}</view>
+<view class="nav-list">
+  <view class="weui-grids">
+    <block wx:for="{{grids}}" wx:key="{{index}}">
+      <navigator bindtap="{{item.click}}" class="weui-grid" wx:if="{{item.click}}" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/images/{{item.ico}}" />
+        <view class="weui-grid__label">{{item.name}}</view>
+      </navigator>
+      <navigator url="{{item.url}}" class="weui-grid" wx:if="{{!item.click}}" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/images/{{item.ico}}" />
+        <view class="weui-grid__label">{{item.name}}</view>
+      </navigator>
     </block>
   </view>
-</view>  -->
+</view>

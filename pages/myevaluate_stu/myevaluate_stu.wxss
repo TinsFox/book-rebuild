@@ -1,6 +1,6 @@
 /* pages/myevaluate/myevaluate.wxss */
 .book-content{
-  margin-top: 30rpx;
+  margin-top: 3rpx;
 }
 
 .book-list{
@@ -10,7 +10,7 @@
   align-items: flex-start;
   justify-content:flex-start;
   box-sizing: border-box;
-  margin-top: 100rpx;
+  /* margin-top: 100rpx; */
   background-color: #fff;
 }
 

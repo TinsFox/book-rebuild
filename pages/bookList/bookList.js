@@ -24,8 +24,6 @@ Page({
   moredetails:function(options){
     var id = options.currentTarget.id;
     console.log("这个id是" + id);
-    
-
     wx.navigateTo({
       url: '../moredetails/moredetails?id='+id,
     })
@@ -36,7 +34,6 @@ Page({
     let tableID = 53564;
     let Chord = new wx.BaaS.TableObject(tableID)
     Chord.setQuery(query).find().then(res =>{
-      //success
       console.log(res.data.objects);
       for(var i = 0;i < res.data.objects.length; i++)
       {

@@ -24,10 +24,8 @@
       <view class="order-icon">
         <navigator url="../orders/orders">
           <image src="/images/小箭头.png"></image>
-          <!-- <view class='bg-red '>去结算</view> -->
         </navigator>
       </view>
-      <view class='bg-red submit' bindtap='submit'>去结算</view>
       <text>全选</text>
       <text class="cart-toatl-price">￥{{totalPrice}}</text>
     </view>
